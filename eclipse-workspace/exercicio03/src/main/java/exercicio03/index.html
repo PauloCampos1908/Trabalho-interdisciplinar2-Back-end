@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Produtos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        form { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        input, button { margin: 5px; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h1>📦 Sistema de Cadastro de Produtos</h1>
+    
+    <form id="produtoForm">
+        <h3>Adicionar Produto:</h3>
+        <input type="text" id="nome" placeholder="Nome do produto" required>
+        <input type="number" id="preco" placeholder="Preço" step="0.01" required>
+        <input type="number" id="quantidade" placeholder="Quantidade" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="listaProdutos">
+        <h3>📋 Produtos Cadastrados:</h3>
+        <p>Os produtos aparecerão aqui...</p>
+    </div>
+
+    <script>
+        
+        console.log("Página carregada!");
+    </script>
+</body>
+</html>
